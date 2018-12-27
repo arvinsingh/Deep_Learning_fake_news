@@ -88,14 +88,14 @@ which takes input a 3-d Tensor of shape (n,50,512), where
 - "n" is number of articles.
 **Google sentence encoder** returns sentence embedding which is of shape (512,).
 
-![Sentence Encoder](SE.jpg "Universal Sentence Encoder")
+![Sentence Encoder](imgs/SE.jpg "Universal Sentence Encoder")
 
 These where then reshaped into [numpy's multidimensional, homogeneous array](https://docs.scipy.org/doc/numpy-1.15.0/reference/generated/numpy.ndarray.html)
 
 These numpy arrays made up the input for the Neural Network.<br/>
 
 *(The figure shown below is taken from deeplearning course on Coursera. Similar version of this network was implemented.)*<br/>
-![Network](NN.jpg "Network Architecture")
+![Network](imgs/NN.jpg "Network Architecture")
 
 
 **3 different architecture where used, these are:**
@@ -121,7 +121,7 @@ Evaluation of each model is shown with the help of [confusion matrix](https://sc
    macro avg       0.95      0.95      0.95      2480
 weighted avg       0.95      0.95      0.95      2480
 ```
-![Accuracy Graph](r1.jpg "Accuracy") ![Loss Graph](r2.jpg "Loss")
+![Accuracy Graph](imgs/r1.jpg "Accuracy") ![Loss Graph](imgs/r2.jpg "Loss")
 
 From the graphs it is evident that model has overfitted the data.<br/>
 Work needed to be done to make generalize the model, implementing more complex and deeper network, training on more data may improve model performance.<br/>
